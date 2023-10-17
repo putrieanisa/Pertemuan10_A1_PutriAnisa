@@ -1,0 +1,7 @@
+n = int(input("Masukkan nilai n dalam bentuk bilangan bulat : "))
+
+matriks_identitas = [[1 if i == j else 0 for j in range(n)] for i in range(n)]
+
+print("Matriks Identitas berukuran", n, "x", n, ":")
+for row in matriks_identitas:
+    print(row)

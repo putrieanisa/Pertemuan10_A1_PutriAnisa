@@ -1,0 +1,24 @@
+baris = int(input("Masukkan jumlah baris matriks: "))
+kolom = int(input("Masukkan jumlah kolom matriks: "))
+
+# Matriks pertama
+print("Masukkan elemen-elemen matriks pertama:")
+matriks1 = [[float(input(f"Masukkan elemen ({i+1},{j+1}): ")) for j in range(kolom)] for i in range(baris)]
+
+# Matriks kedua
+print("Masukkan elemen-elemen matriks kedua:")
+matriks2 = [[float(input(f"Masukkan elemen ({i+1},{j+1}): ")) for j in range(kolom)] for i in range(baris)]
+
+hasil_matriks = [[matriks1[i][j] + matriks2[i][j] for j in range(kolom)] for i in range(baris)]
+
+print("\nMatriks pertama:")
+for row in matriks1:
+    print(row)
+
+print("\nMatriks kedua:")
+for row in matriks2:
+    print(row)
+
+print("\nHasil penjumlahan matriks:")
+for row in hasil_matriks:
+    print(row)

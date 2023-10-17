@@ -1,0 +1,16 @@
+baris = int(input("Masukkan jumlah baris matriks: "))
+kolom = int(input("Masukkan jumlah kolom matriks: "))
+
+print("Masukkan elemen-elemen matriks:")
+matriks = [[float(input(f"Masukkan elemen ({i+1},{j+1}): ")) for j in range(kolom)] for i in range(baris)]
+
+# Transpose matriks
+transpose_matriks = [[matriks[j][i] for j in range(baris)] for i in range(kolom)]
+
+print("\nMatriks:")
+for row in matriks:
+    print(row)
+
+print("\nTranspose Matriks:")
+for row in transpose_matriks:
+    print(row)
